@@ -1,0 +1,93 @@
+14:31:03,102 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Job execution switched to status SCHEDULED
+14:31:03,104 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSource(CSV Input (|)) (1/1) switched to SCHEDULED
+14:31:03,104 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Reduce(Create q as a random matrix) (1/1) switched to SCHEDULED
+14:31:03,104 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to SCHEDULED
+14:31:03,104 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to SCHEDULED
+14:31:03,105 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	CoGroup(For fixed q calculates optimal p) (1/1) switched to SCHEDULED
+14:31:03,105 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the rows of p with multiple keys)) (1/1) switched to SCHEDULED
+14:31:03,105 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	CoGroup(For fixed p calculates optimal q) (1/1) switched to SCHEDULED
+14:31:03,105 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Fake Tail (1/1) switched to SCHEDULED
+14:31:03,105 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to SCHEDULED
+14:31:03,105 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	CoGroup(For fixed q calculates optimal p) (1/1) switched to SCHEDULED
+14:31:03,106 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to SCHEDULED
+14:31:03,106 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to SCHEDULED
+14:31:03,106 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to SCHEDULED
+14:31:03,106 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSource(CSV Input (|)) (1/1) switched to ASSIGNED
+14:31:03,106 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to ASSIGNED
+14:31:03,106 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to ASSIGNED
+14:31:03,107 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Reduce(Create q as a random matrix) (1/1) switched to ASSIGNED
+14:31:03,107 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to ASSIGNED
+14:31:03,107 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	CoGroup(For fixed q calculates optimal p) (1/1) switched to ASSIGNED
+14:31:03,107 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the rows of p with multiple keys)) (1/1) switched to ASSIGNED
+14:31:03,107 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	CoGroup(For fixed q calculates optimal p) (1/1) switched to ASSIGNED
+14:31:03,107 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to ASSIGNED
+14:31:03,108 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to ASSIGNED
+14:31:03,108 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	CoGroup(For fixed p calculates optimal q) (1/1) switched to ASSIGNED
+14:31:03,108 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Fake Tail (1/1) switched to ASSIGNED
+14:31:03,108 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to ASSIGNED
+14:31:03,108 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSource(CSV Input (|)) (1/1) switched to READY
+14:31:03,108 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSource(CSV Input (|)) (1/1) switched to STARTING
+14:31:03,109 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Job execution switched to status RUNNING
+14:31:03,109 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	DataSource(CSV Input (|)) (1/1) switched to RUNNING
+14:31:03,109 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Reduce(Create q as a random matrix) (1/1) switched to READY
+14:31:03,109 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Reduce(Create q as a random matrix) (1/1) switched to STARTING
+14:31:03,109 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Reduce(Create q as a random matrix) (1/1) switched to RUNNING
+14:31:03,110 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to READY
+14:31:03,110 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to STARTING
+14:31:03,110 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:02:	Join(Sends the columns of q with multiple keys) (1/1) switched to RUNNING
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:03:	CoGroup(For fixed q calculates optimal p) (1/1) switched to READY
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:03:	CoGroup(For fixed q calculates optimal p) (1/1) switched to STARTING
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:03:	CoGroup(For fixed q calculates optimal p) (1/1) switched to RUNNING
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:03:	Join(Sends the rows of p with multiple keys)) (1/1) switched to READY
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:03:	Join(Sends the rows of p with multiple keys)) (1/1) switched to STARTING
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:03:	Join(Sends the rows of p with multiple keys)) (1/1) switched to RUNNING
+14:31:05,141 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	CoGroup(For fixed p calculates optimal q) (1/1) switched to READY
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	Fake Tail (1/1) switched to READY
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	CoGroup(For fixed p calculates optimal q) (1/1) switched to STARTING
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	Fake Tail (1/1) switched to STARTING
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	CoGroup(For fixed p calculates optimal q) (1/1) switched to RUNNING
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	Fake Tail (1/1) switched to RUNNING
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	Join(Sends the columns of q with multiple keys) (1/1) switched to READY
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	Join(Sends the columns of q with multiple keys) (1/1) switched to STARTING
+14:31:05,142 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:04:	Join(Sends the columns of q with multiple keys) (1/1) switched to RUNNING
+14:31:07,191 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:05:	CoGroup(For fixed q calculates optimal p) (1/1) switched to READY
+14:31:07,192 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:05:	CoGroup(For fixed q calculates optimal p) (1/1) switched to STARTING
+14:31:07,192 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:05:	CoGroup(For fixed q calculates optimal p) (1/1) switched to RUNNING
+14:31:07,192 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:06:	DataSource(CSV Input (|)) (1/1) switched to FINISHING
+14:31:09,258 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:07:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to READY
+14:31:09,259 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:07:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to STARTING
+14:31:09,261 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:07:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to RUNNING
+14:31:09,261 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:08:	Reduce(Create q as a random matrix) (1/1) switched to FINISHING
+14:31:11,342 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:10:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to READY
+14:31:11,342 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:10:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to STARTING
+14:31:11,343 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:10:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to RUNNING
+14:31:15,500 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:13:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to FINISHING
+14:31:15,501 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:13:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to READY
+14:31:15,501 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:13:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to STARTING
+14:31:15,501 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:13:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to RUNNING
+14:31:15,501 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to FINISHING
+14:31:15,501 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Join(Sends the columns of q with multiple keys) (1/1) switched to FINISHING
+14:31:15,501 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Reduce(Create q as a random matrix) (1/1) switched to FINISHED
+14:31:15,502 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to FINISHED
+14:31:15,502 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	CoGroup(For fixed q calculates optimal p) (1/1) switched to FINISHING
+14:31:15,502 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Join(Sends the rows of p with multiple keys)) (1/1) switched to FINISHING
+14:31:15,502 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Join(Sends the columns of q with multiple keys) (1/1) switched to FINISHED
+14:31:15,502 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	CoGroup(For fixed p calculates optimal q) (1/1) switched to FINISHING
+14:31:15,502 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Fake Tail (1/1) switched to FINISHING
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Fake Tail (1/1) switched to FINISHED
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Join(Sends the rows of p with multiple keys)) (1/1) switched to FINISHED
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	CoGroup(For fixed q calculates optimal p) (1/1) switched to FINISHED
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	CoGroup(For fixed p calculates optimal q) (1/1) switched to FINISHED
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	Join(Sends the columns of q with multiple keys) (1/1) switched to FINISHING
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to FINISHING
+14:31:15,503 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@7ea742a1) (1/1) switched to FINISHED
+14:31:15,504 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to FINISHED
+14:31:15,504 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to READY
+14:31:15,504 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to STARTING
+14:31:15,504 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:14:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to RUNNING
+14:31:15,504 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:15:	CoGroup(For fixed q calculates optimal p) (1/1) switched to FINISHING
+14:31:15,504 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:15:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to FINISHING
+14:31:15,505 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:15:	DataSource(CSV Input (|)) (1/1) switched to FINISHED
+14:31:15,505 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:15:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.strato.ColumnOutputFormatStrato@5dcde3f3) (1/1) switched to FINISHED
+14:31:15,505 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:15:	Join(Sends the columns of q with multiple keys) (1/1) switched to FINISHED
+14:31:15,505 INFO  eu.stratosphere.nephele.client.JobClient                      - 09/04/2014 14:31:15:	Job execution switched to status FINISHED

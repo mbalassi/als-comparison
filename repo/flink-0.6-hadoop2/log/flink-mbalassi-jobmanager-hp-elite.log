@@ -1,0 +1,110 @@
+14:11:26,503 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                - -------------------------------------------------------
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Starting JobManager (Version: 0.6-incubating, Rev:053f4c6, Date:15.08.2014 @ 13:57:49 CEST)
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Current user: mbalassi
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM: OpenJDK 64-Bit Server VM - Oracle Corporation - 1.7/24.51-b03
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Startup Options: -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256m -Xms768m -Xmx768m 
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Maximum heap size: 742 MiBytes
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JAVA_HOME: /usr/lib/jvm/java-7-openjdk-amd64/jre
+14:11:26,674 INFO  org.apache.flink.runtime.jobmanager.JobManager                - -------------------------------------------------------
+14:11:26,716 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting job manager in LOCAL mode
+14:11:26,718 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Trying to load org.apache.flink.runtime.instance.LocalInstanceManager as instance manager
+14:11:26,735 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Execution mode: LOCAL
+14:11:26,735 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Reading location of job manager from configuration
+14:11:26,735 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Connecting to JobManager at: localhost/127.0.0.1:6123
+14:11:26,744 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Determined /127.0.0.1 as the TaskTracker's own IP address
+14:11:26,745 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager connection information:localhost (ipcPort=6122, dataPort=6121)
+14:11:26,751 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Profiling of jobs is disabled.
+14:11:26,790 INFO  org.apache.flink.runtime.io.network.bufferprovider.GlobalBufferPool  - Allocated 2048 buffers of size 32768 bytes each (total: 64 MB).
+14:11:26,791 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Number of task slots not configured. Creating one task slot.
+14:11:26,792 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Using 0.7 of the free heap space for managed memory.
+14:11:26,793 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Initializing memory manager with 413 megabytes of memory. Page size is 32768 bytes.
+14:11:27,067 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Memory usage stats: [HEAP: 485/742/742 MB, NON HEAP: 11/23/304 MB (used/comitted/max)]
+14:11:27,067 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Trying to load org.apache.flink.runtime.jobmanager.scheduler.DefaultScheduler as scheduler
+14:11:27,081 INFO  org.apache.flink.runtime.instance.DefaultInstanceManager      - Creating instance for localhost (ipcPort=6122, dataPort=6121), parent is root
+14:11:27,081 INFO  org.apache.flink.runtime.instance.DefaultInstanceManager      - New number of registered hosts is 1
+14:11:27,081 INFO  org.apache.flink.runtime.jobmanager.web.WebInfoServer         - Setting up web info server, using web-root directory '/home/mbalassi/git/als-comparison/repo/flink-0.6-hadoop2/bin/../conf/.././resources/web-docs-infoserver'.
+14:11:27,081 INFO  org.apache.flink.runtime.jobmanager.web.WebInfoServer         - Web info server will display information about nephele job-manager on localhost, port 8081.
+14:11:27,170 INFO  org.apache.flink.runtime.jobmanager.web.WebInfoServer         - Starting web info server for JobManager on port 8081
+14:11:27,171 INFO  org.eclipse.jetty.util.log                                    - jetty-8.0.0.M1
+14:11:27,199 INFO  org.eclipse.jetty.util.log                                    - Started SelectChannelConnector@0.0.0.0:8081
+14:11:27,885 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Creating initial execution graph from job graph AlsFlink
+14:11:27,952 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Job input vertex DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) generated 1 input splits
+14:11:28,225 INFO  org.apache.flink.runtime.jobmanager.splitassigner.InputSplitManager  - Trying to load input split assigner for type org.apache.flink.core.fs.FileInputSplit
+14:11:28,227 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Scheduling job AlsFlink
+14:11:28,229 INFO  org.apache.flink.runtime.jobmanager.scheduler.DefaultScheduler  - Requesting 1 slots for job 0de442ec13d6600047e35977c1760800
+14:11:28,231 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1)
+14:11:28,242 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Status of job AlsFlink(0de442ec13d6600047e35977c1760800) changed to SCHEDULED
+14:11:28,243 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task Reduce(Create q as a random matrix) (1/1)
+14:11:28,243 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task PartialSolution (BulkIteration (Bulk Iteration)) (1/1)
+14:11:28,243 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:28,243 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:28,243 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task Join(Sends the rows of p with multiple keys)) (1/1)
+14:11:28,243 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task CoGroup (For fixed p calculates optimal q) (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task Fake Tail (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@6c10fa4d) (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@1bb2f524) (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from CREATED to SCHEDULED for task Sync(BulkIteration (Bulk Iteration)) (1/1)
+14:11:28,244 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task Join(Sends the rows of p with multiple keys)) (1/1)
+14:11:28,245 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:28,245 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task Sync(BulkIteration (Bulk Iteration)) (1/1)
+14:11:28,245 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@1bb2f524) (1/1)
+14:11:28,245 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task CoGroup (For fixed p calculates optimal q) (1/1)
+14:11:28,245 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:28,245 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@6c10fa4d) (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task Reduce(Create q as a random matrix) (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task Fake Tail (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task PartialSolution (BulkIteration (Bulk Iteration)) (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from SCHEDULED to ASSIGNED for task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1)
+14:11:28,246 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1)
+14:11:28,247 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1)
+14:11:28,257 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:28,340 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1)
+14:11:28,343 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1)
+14:11:28,345 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Status of job AlsFlink(0de442ec13d6600047e35977c1760800) changed to RUNNING
+14:11:28,351 INFO  org.apache.flink.runtime.jobmanager.splitassigner.file.FileInputSplitList  - localhost (ipcPort=6122, dataPort=6121) receives remote file input split (distance 2147483647)
+14:11:28,351 INFO  org.apache.flink.runtime.jobmanager.splitassigner.InputSplitManager  - DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) receives input split 0
+14:11:28,472 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task Reduce(Create q as a random matrix) (1/1)
+14:11:28,472 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task Reduce(Create q as a random matrix) (1/1)
+14:11:28,474 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task Reduce(Create q as a random matrix) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:28,490 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task Reduce(Create q as a random matrix) (1/1)
+14:11:28,491 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task Reduce(Create q as a random matrix) (1/1)
+14:11:28,977 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:28,978 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:28,980 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task Join(Sends the columns of q with multiple keys) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:29,027 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:29,029 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:29,480 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:29,480 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:29,482 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task CoGroup (For fixed q calculates optimal p) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:29,531 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:29,532 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:29,983 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task Join(Sends the rows of p with multiple keys)) (1/1)
+14:11:29,983 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task Join(Sends the rows of p with multiple keys)) (1/1)
+14:11:29,986 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task Join(Sends the rows of p with multiple keys)) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:30,042 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task Join(Sends the rows of p with multiple keys)) (1/1)
+14:11:30,044 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task Join(Sends the rows of p with multiple keys)) (1/1)
+14:11:30,486 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task CoGroup (For fixed p calculates optimal q) (1/1)
+14:11:30,486 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task Fake Tail (1/1)
+14:11:30,486 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task CoGroup (For fixed p calculates optimal q) (1/1)
+14:11:30,487 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task Fake Tail (1/1)
+14:11:30,489 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task CoGroup (For fixed p calculates optimal q) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:30,489 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task Fake Tail (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:30,555 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task CoGroup (For fixed p calculates optimal q) (1/1)
+14:11:30,556 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task Fake Tail (1/1)
+14:11:30,562 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task CoGroup (For fixed p calculates optimal q) (1/1)
+14:11:30,562 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task Fake Tail (1/1)
+14:11:31,005 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:31,006 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:31,008 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task Join(Sends the columns of q with multiple keys) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:31,052 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:31,055 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task Join(Sends the columns of q with multiple keys) (1/1)
+14:11:31,527 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from ASSIGNED to READY for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:31,527 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from READY to STARTING for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:31,529 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting task CoGroup (For fixed q calculates optimal p) (1/1) on localhost (ipcPort=6122, dataPort=6121)
+14:11:31,571 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - TM: ExecutionState set from STARTING to RUNNING for task CoGroup (For fixed q calculates optimal p) (1/1)
+14:11:31,572 INFO  org.apache.flink.runtime.execution.ExecutionStateTransition   - JM: ExecutionState set from STARTING to RUNNING for task CoGroup (For fixed q calculates optimal p) (1/1)

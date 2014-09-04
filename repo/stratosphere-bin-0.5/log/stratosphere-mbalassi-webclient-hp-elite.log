@@ -1,0 +1,4 @@
+14:30:58,952 INFO  eu.stratosphere.client.web.WebInterfaceServer                 - Setting up web frontend server, using web-root directory '/home/mbalassi/git/als-comparison/repo/stratosphere-bin-0.5/bin/../conf/.././resources/web-docs'.
+14:30:58,955 INFO  eu.stratosphere.client.web.WebInterfaceServer                 - Web frontend server will store temporary files in '/tmp', uploaded jobs in '/tmp/webclient-jobs', plan-json-dumps in '/tmp/webclient-plans'.
+14:30:58,955 INFO  eu.stratosphere.client.web.WebInterfaceServer                 - Web-frontend will submit jobs to nephele job-manager on localhost, port 6123.
+14:30:59,126 INFO  eu.stratosphere.client.WebFrontend                            - Starting web frontend server on port 8080.

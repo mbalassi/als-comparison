@@ -1,0 +1,56 @@
+14:11:27,687 INFO  org.apache.flink.runtime.ipc.Client                           - Retrying connect to server: /127.0.0.1:6123. Already tried 0 time(s).
+14:11:29,266 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Job execution switched to status SCHEDULED
+14:11:29,267 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) switched to SCHEDULED
+14:11:29,267 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Reduce(Create q as a random matrix) (1/1) switched to SCHEDULED
+14:11:29,268 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to SCHEDULED
+14:11:29,268 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the columns of q with multiple keys) (1/1) switched to SCHEDULED
+14:11:29,268 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	CoGroup (For fixed q calculates optimal p) (1/1) switched to SCHEDULED
+14:11:29,269 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the rows of p with multiple keys)) (1/1) switched to SCHEDULED
+14:11:29,269 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	CoGroup (For fixed p calculates optimal q) (1/1) switched to SCHEDULED
+14:11:29,269 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Fake Tail (1/1) switched to SCHEDULED
+14:11:29,270 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the columns of q with multiple keys) (1/1) switched to SCHEDULED
+14:11:29,270 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	CoGroup (For fixed q calculates optimal p) (1/1) switched to SCHEDULED
+14:11:29,270 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@6c10fa4d) (1/1) switched to SCHEDULED
+14:11:29,270 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@1bb2f524) (1/1) switched to SCHEDULED
+14:11:29,271 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to SCHEDULED
+14:11:29,271 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the rows of p with multiple keys)) (1/1) switched to ASSIGNED
+14:11:29,271 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the columns of q with multiple keys) (1/1) switched to ASSIGNED
+14:11:29,272 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Sync(BulkIteration (Bulk Iteration)) (1/1) switched to ASSIGNED
+14:11:29,272 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@1bb2f524) (1/1) switched to ASSIGNED
+14:11:29,272 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	CoGroup (For fixed p calculates optimal q) (1/1) switched to ASSIGNED
+14:11:29,272 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	CoGroup (For fixed q calculates optimal p) (1/1) switched to ASSIGNED
+14:11:29,273 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSink(hu.sztaki.ilab.cumulonimbus.als_comparison.flink.ColumnOutputFormatFlink@6c10fa4d) (1/1) switched to ASSIGNED
+14:11:29,273 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Reduce(Create q as a random matrix) (1/1) switched to ASSIGNED
+14:11:29,274 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	CoGroup (For fixed q calculates optimal p) (1/1) switched to ASSIGNED
+14:11:29,274 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the columns of q with multiple keys) (1/1) switched to ASSIGNED
+14:11:29,274 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Fake Tail (1/1) switched to ASSIGNED
+14:11:29,274 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	PartialSolution (BulkIteration (Bulk Iteration)) (1/1) switched to ASSIGNED
+14:11:29,275 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) switched to ASSIGNED
+14:11:29,275 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) switched to READY
+14:11:29,275 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) switched to STARTING
+14:11:29,276 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Job execution switched to status RUNNING
+14:11:29,276 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	DataSource (CSV Input (|) /home/mbalassi/git/als-comparison/data/sampledb2b.csv.txt) (1/1) switched to RUNNING
+14:11:29,276 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Reduce(Create q as a random matrix) (1/1) switched to READY
+14:11:29,277 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Reduce(Create q as a random matrix) (1/1) switched to STARTING
+14:11:29,277 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Reduce(Create q as a random matrix) (1/1) switched to RUNNING
+14:11:29,277 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the columns of q with multiple keys) (1/1) switched to READY
+14:11:29,278 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:28:	Join(Sends the columns of q with multiple keys) (1/1) switched to STARTING
+14:11:29,278 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:29:	Join(Sends the columns of q with multiple keys) (1/1) switched to RUNNING
+14:11:31,294 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:29:	CoGroup (For fixed q calculates optimal p) (1/1) switched to READY
+14:11:31,294 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:29:	CoGroup (For fixed q calculates optimal p) (1/1) switched to STARTING
+14:11:31,295 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:29:	CoGroup (For fixed q calculates optimal p) (1/1) switched to RUNNING
+14:11:31,295 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:29:	Join(Sends the rows of p with multiple keys)) (1/1) switched to READY
+14:11:31,295 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:29:	Join(Sends the rows of p with multiple keys)) (1/1) switched to STARTING
+14:11:31,296 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	Join(Sends the rows of p with multiple keys)) (1/1) switched to RUNNING
+14:11:31,296 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	CoGroup (For fixed p calculates optimal q) (1/1) switched to READY
+14:11:31,297 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	Fake Tail (1/1) switched to READY
+14:11:31,297 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	CoGroup (For fixed p calculates optimal q) (1/1) switched to STARTING
+14:11:31,298 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	Fake Tail (1/1) switched to STARTING
+14:11:31,298 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	CoGroup (For fixed p calculates optimal q) (1/1) switched to RUNNING
+14:11:31,299 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:30:	Fake Tail (1/1) switched to RUNNING
+14:11:31,299 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:31:	Join(Sends the columns of q with multiple keys) (1/1) switched to READY
+14:11:31,300 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:31:	Join(Sends the columns of q with multiple keys) (1/1) switched to STARTING
+14:11:31,300 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:31:	Join(Sends the columns of q with multiple keys) (1/1) switched to RUNNING
+14:11:33,375 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:31:	CoGroup (For fixed q calculates optimal p) (1/1) switched to READY
+14:11:33,376 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:31:	CoGroup (For fixed q calculates optimal p) (1/1) switched to STARTING
+14:11:33,376 INFO  org.apache.flink.runtime.client.JobClient                     - 09/04/2014 14:11:31:	CoGroup (For fixed q calculates optimal p) (1/1) switched to RUNNING
